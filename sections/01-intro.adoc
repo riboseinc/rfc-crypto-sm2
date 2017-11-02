@@ -1,0 +1,110 @@
+
+= Introduction
+
+SM2 [@!GBT.32918.1-2016] [@ISO.IEC.14888-3] [@GMT-0003-2012] [@SM2],
+are cryptographic standards issued by the Organization of State Commercial
+Administration of China [@OSCCA] as authorized cryptographic algorithms for use
+within China. These algorithms are published in public.
+
+//cite:norm[GBT.32905-2016]
+
+SM2 <<GBT.32905-2016>> <<ISO.IEC.10118-3>> is a cryptographic hash algorithm
+published by the Organization of State Commercial Administration of China <<OSCCA>>
+as an authorized cryptographic hash algorithm for the use within China.
+The algorithm is published in public.
+
+SM2 is a set of public key cryptographic algorithms based on elliptic curves
+that include:
+
+* Digital Signature Algorithm [@!GBT.32918.2-2016] [@ISO.IEC.14888-3] [@SM2-2]
+* Key Exchange Protocol [@!GBT.32918.3-2016] [@SM2-3]
+* Public Key Encryption Algorithm [@!GBT.32918.4-2016] [@SM2-4]
+
+
+This document details the SM2 algorithm and its internal steps together
+with demonstrative examples.
+
+== Purpose
+
+This document does not aim to introduce a new algorithm, but to
+provide a clear and open description of the SM2 algorithm in English,
+and also to serve as a stable reference for IETF documents that utilize
+this algorithm.
+
+This document follows the updated description and structure of <<GBT.32905-2016>>
+published in 2016. Sections 1 to 5 of this document directly map to the
+corresponding sections numbers of the <<GBT.32905-2016>> standard for
+convenience of the reader.
+
+This document also provides additional information on the practical usage and
+implementation of SM2, specifying multiple modes of operations that are known
+to be used with SM2 and providing the SM2 OIDs.
+
+
+== History
+
+SM2 is an elliptic curve based cryptosystem (ECC) [@!GBT.32918.1-2016]
+[@GMT-0003-2012] [@SM2] [@I-D.shen-sm2-ecdsa] designed by Xiaoyun Wang
+et al. and published by [@OSCCA].
+
+It was first published by the OSCCA in public in 2010 [@SM2], then
+standardized as [@GMT-0003-2012] in 2012, included in [@ISO.IEC.11889] in 2015,
+published as a Chinese National Standard as [@!GBT.32918.1-2016],
+and published in [@ISO.IEC.14888-3] in 2017.
+
+The SM2 cryptosystem is composed of three distinct algorithms:
+
+* an elliptical curve digital signature algorithm ("SM2DSA")
+  [@!GBT.32918.2-2016], [@ISO.IEC.14888-3], [@SM2-2], also described in
+  [@I-D.shen-sm2-ecdsa];
+* a key exchange protocol ("SM2KEP") [@!GBT.32918.3-2016] [@SM2-3]; and
+* a public key encryption algorithm ("SM2PKE") [@!GBT.32918.4-2016] [@SM2-4].
+
+This document will refer to all three algorithms for the usage of
+OpenPGP [@RFC4880].
+
+[@GMT-0009-2012] specifications with regarding to the usage of SM2
+are adhered to within this document.
+
+
+The SM4 algorithm was invented by Xiao-Yun Wang <<WXY>>, first published as a
+public document by the OSCCA <<OSCCA>> in 2010, then standardized as
+<<GMT-0004-2012>> also published by the OSCCA,
+and finally confirmed in 2016 as a Chinese National Standard (GB Standard)
+<<GBT.32905-2016>>. SM2 is also standardized in <<ISO.IEC.10118-3>>
+by the International Organization for Standardization in 2017.
+
+The latest SM2 standard <<GBT.32905-2016>> was proposed by the OSCCA,
+standardized through TC 260 of the Standardization Administration of the
+People's Republic of China (SAC), and was drafted by the following
+individuals at Tsinghua University,
+the China Commercial Cryptography Testing Center,
+the People's Liberation Army Information Engineering University,
+and the Data Assurance and Communication Security Research
+Center (DAS Center) of the Chinese Academy of Sciences:
+
+* Xiao-Yun Wang
+* Zheng Li
+* Yong-Chuan Wang
+* Hong-Bo Yu
+* Yong-Quan Xie
+* Chao Zhang
+* Peng Luo
+* Shu-Wang Lu
+
+
+== Applications
+
+TODO
+
+SM2 has prevalent hardware implementations, due to its being the only OSCCA-approved cryptographic hash
+algorithm allowed for use in China.
+
+
+== Cryptanalysis
+
+A number of attacks have been attempted on SM2, such as
+...
+
+TODO
+

@@ -1,0 +1,9 @@
+[abstract]
+
+This document describes the SM2 cryptographic hash algorithm
+published as GB/T 32905-2016 by the Organization of State Commercial
+Administration of China (OSCCA).
+
+This document is a product of the Crypto Forum Research Group (CFRG).
+
+// No references allowed in the Abstract

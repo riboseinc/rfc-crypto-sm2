@@ -1,0 +1,23 @@
+= Terms and Definitions
+
+The key words "**MUST**", "**MUST NOT**", "**REQUIRED**", "**SHALL**",
+"**SHALL NOT**", "**SHOULD**", "**SHOULD NOT**", "**RECOMMENDED**",
+"**MAY**", and "**OPTIONAL**" in this document are to be interpreted
+as described in <<RFC2119>>.
+
+The following terms and definitions apply to this document.
+
+bit string::
+  a binary string composed of 0s and 1s.
+
+big-endian::
+  describes the order in which data is stored in memory, where the more significant digits are stored at the lower storage addresses, the less significant digits are stored at the high storage addresses.
+
+message::
+  a bit string of arbitrary length. In this document, the message is the input to the hash algorithm.
+
+hash value::
+  the output bit string of the hash algorithm given input of a message.
+
+word::
+  a 32-bit quantity.

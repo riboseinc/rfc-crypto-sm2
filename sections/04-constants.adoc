@@ -1,0 +1,55 @@
+= Primitives And Functions
+
+== Initialization Vector $$IV$$
+
+[source]
+----
+IV = 7380166f 4914b2b9 172442d7 da8a0600
+     a96f30bc 163138aa e38dee4d b0fb0e4e
+----
+
+== Constants $$T_j$$
+
+When $$0 <= j <= 15$$:
+
+[source]
+----
+T_j = 79cc4519
+----
+
+When $$16 <= j <= 63$$:
+
+[source]
+----
+T_j = 7a879d8a
+----
+
+== Boolean Functions $$FF_j$$ and $$GG_j$$
+
+When $$0 <= j <= 15$$:
+
+[source]
+----
+FF_j(X, Y, Z) = X xor Y xor Z
+GG_j(X, Y, Z) = X xor Y xor Z
+----
+
+When $$16 <= j <= 63$$:
+
+[source]
+----
+FF_j(X, Y, Z) = (X and Y) or (X and Z) or (Y and Z)
+GG_j(X, Y, Z) = (X and Y) or (not(X) and Z)
+----
+
+Where X, Y, Z are 32-bit words.
+
+== Permutation Functions $$P_0$$ and $$P_1$$
+
+[source]
+----
+P_0(X) = X xor (X <<< 9) xor (X <<< 17)
+P_1(X) = X xor (X <<< 15) xor (X <<< 23)
+----
+
+Where X is a 32-bit word.

@@ -1,0 +1,73 @@
+= Internet Draft: SM2
+
+== Fetching the document
+
+[source,sh]
+----
+git clone https://github.com/riboseinc/rfc-crypto-sm2
+----
+
+
+== Prerequisites
+
+You will need `asciidoctor`, `asciidoctor-rfc`, `xml2rfc` and `idnits` (for submission preflight).
+
+If you're on macOS you can run:
+
+[source,sh]
+----
+brew install idnits
+----
+
+[source,sh]
+----
+brew install python
+easy_install pip
+pip install xml2rfc
+----
+
+[source,sh]
+----
+gem install bundler
+bundle
+----
+
+== Building the document
+
+[source,sh]
+----
+make all
+# or
+export ID_NAME=oscca-cfrg-sm2
+make draft-${ID_NAME}.txt
+----
+
+== Checking against idnits
+
+https://tools.ietf.org/tools/idnits/[idnits] is the RFC checking tool prior to
+submissions.
+
+[source,sh]
+----
+export ID_NAME=oscca-cfrg-sm2
+export ID_VERSION=00
+make draft-${ID_NAME}.txt
+mv draft-${ID_NAME}{,-${ID_VERSION}}.txt
+idnits --verbose draft-${ID_NAME}-${ID_VERSION}.txt
+----
+
+== Checking for invalid / unicode characters
+
+[source,sh]
+----
+export ID_NAME=oscca-cfrg-sm2
+pcregrep --color='auto' -n "[\x80-\xFF]" draft-${ID_NAME}.xml
+----
+
+== Iterating the document
+
+[source,sh]
+----
+export ID_NAME=oscca-cfrg-sm2
+make clean all; open draft-${ID_NAME}.txt
+----

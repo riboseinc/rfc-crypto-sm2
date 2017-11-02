@@ -1,0 +1,59 @@
+= SM2 Cryptographic Hash Function
+Sean Shen <shenshuo@cnnic.cn>; Xiaodong Lee <xl@cnnic.cn>; Ronald Henry Tse <ronald.tse@ribose.com>; Dr. Wai Kit Wong <wongwk@hsmc.edu.hk>
+:doctype: internet-draft
+:name: draft-oscca-cfrg-sm2-03
+:status: info
+:ipr: trust200902
+:submissionType: IRTF
+:area: cfrg
+:intended-series: full-standard
+:workgroup: Crypto Forum Research Group
+:revdate: 2017-10-30T00:00:00Z
+:forename_initials: S.
+:organization: Chinese Academy of Science
+:phone: +86 10-58813038
+:street: No.4 South 4th Zhongguancun Street
+:city: Beijing
+:code: 100190
+:country: People's Republic of China
+:uri: http://www.cas.cn
+:forename_initials_2: X.
+:organization_2: CNNIC
+:phone_2: +86 10-58813038
+:street_2: No.4 South 4th Zhongguancun Street
+:city_2: Beijing
+:code_2: 100190
+:country_2: People's Republic of China
+:uri_2: https://cnnic.com.cn
+:forename_initials_3: R.
+:organization_3: Ribose
+:street_3: Suite 1111, 1 Pedder Street
+:city_3: Central
+:region_3: Hong Kong
+:country_3: People's Republic of China
+:uri_3: https://www.ribose.com
+:forename_initials_4: W. K.
+:organization_4: Hang Seng Management College
+:street_4: Hang Shin Link, Siu Lek Yuen
+:city_4: Shatin
+:region_4: Hong Kong
+:country_4: People's Republic of China
+:uri_4: https://www.hsmc.edu.hk
+//:bibliography-database: my_database.bib
+
+include::sections/00-abstract.adoc[leveloffset=+1]
+
+include::sections/01-intro.adoc[leveloffset=+1]
+include::sections/02-conventions.adoc[leveloffset=+1]
+include::sections/03-symbols.adoc[leveloffset=+1]
+include::sections/04-constants.adoc[leveloffset=+1]
+include::sections/05-algorithm.adoc[leveloffset=+1]
+include::sections/09-oid.adoc[leveloffset=+1]
+include::sections/10-security.adoc[leveloffset=+1]
+include::sections/11-iana.adoc[leveloffset=+1]
+
+// must give references before appendix!
+
+include::sections/98-references.adoc[leveloffset=+1]
+include::sections/97-examples.adoc[leveloffset=+1]
+include::sections/99-acknowledgements.adoc[leveloffset=+1]

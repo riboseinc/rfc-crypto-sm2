@@ -1,0 +1,23 @@
+= Security Considerations
+
+* Products and services that utilize cryptography are regulated by the OSCCA
+  <<OSCCA>>; they must be explicitly approved or certified by the OSCCA before being
+  allowed to be sold or used in China.
+
+* SM2 <<GBT.32918.1-2016>> is an elliptic curve cryptosystem (ECC) published by the OSCCA <<OSCCA>>.
+  Its security relies on the assumption that the elliptic curve discrete
+  logarithm problem (ECLP) is computationally infeasible. With advances in
+  cryptanalysis, new attack algorithms may reduce the complexity of ECLP, making
+  it easier to attack the SM2 cryptosystem that is considered secure at the time
+  this document is published. You **SHOULD** check current literature to
+  determine if the algorithms in SM2 have been found vulnerable.
+
+* There are security concerns with regards to side-channel attacks against ECCs,
+  including template attacks (such as <<SM2-Template>>) that rely on physical access
+  to the computation device. An implementer of ECC systems **SHOULD** be
+  aware of potential vulnerabilities in this regard.
+
+* SM2 has a key length of 512 bits for the public key and 256 bits for the private key.
+  It is considered an alternative to ECDSA P-256 <<RFC6637>>. Its security strength
+  is comparable to a 128-bit symmetric key strength <<I-D.ietf-msec-mikey-ecc>>,
+  e.g., AES-128 <<NIST.FIPS.197>>.

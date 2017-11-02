@@ -1,0 +1,73 @@
+= Symbols And Abbreviations
+
+== Operators
+
+$$bitlen(S)$$::
+  The length of string $$S$$ in bits (e.g., bitlen(101) == 3).
+
+$$S + T$$::
+  addition of two 32-bit vectors $$S$$ and $$T$$ with a $$mod 2^32$$ bit
+  wrap around.
+
+$$S and T$$::
+  bitwise "and" of two 32-bit vectors $$S$$ and $$T$$.
+  $$S$$ and $$T$$ will always have the same length.
+
+$$S or T$$::
+  bitwise "or" of two 32-bit vectors $$S$$ and $$T$$.
+  $$S$$ and $$T$$ will always have the same length.
+
+$$S xor T$$::
+  bitwise exclusive-or of two 32-bit vectors $$S$$ and $$T$$.
+  $$S$$ and $$T$$ will always have the same length.
+
+$$not(S)$$::
+  bitwise "not" of a 32-bit vectors $$S$$.
+
+$$a <<< i$$::
+  32-bit bitwise cyclic shift on $$a$$ with $$i$$ bits shifted left.
+
+$$S || T$$::
+  String S concatenated with string T (e.g., 000 || 111 == 000111).
+
+$$a <- S$$::
+  Assignment operator of value $$S$$ to variable $$a$$.
+
+$$num2str(i, n)$$::
+  The n-bit string whose base-2 interpretation is $$i$$
+  (e.g., num2str(14,4) == 1110 and num2str(1,2) == 01).
+
+== Usage
+
+$$A, B, C, D, E, F, G, H$$::
+  Each a 8 word-width register.
+
+$$B_i$$::
+  The i-th message section
+
+$$CF$$::
+  The compression function.
+
+$$FF_j$$, $$GG_j$$::
+  Boolean functions, changes according to $$j$$.
+
+$$IV$$::
+  The initialization vector, used to determine the initial state of the compression function registers.
+
+$$P_0$$::
+  The permutation function within the compression function.
+
+$$P_1$$::
+  The permutation function for message expansion.
+
+$$T_j$$::
+  The algorithm constant, changes according to $$j$$.
+
+$$m$$::
+  The message.
+
+$$m'$$::
+  The message $$m$$ after padding.
+
+$$n$$::
+  Number of message blocks within a message.
